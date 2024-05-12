@@ -6,7 +6,6 @@
     <title>Mondrian Project</title>
     <style>
       /* 
-    Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
     Red: #E72F24
@@ -14,38 +13,56 @@
     Blue: #004592
     Yellow: #F9D01E
     */
+      .border {
+        background-color: black;
+        width: 748px;
+      }
       .container {
         display: grid;
+        width: 748px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 3fr 2fr 0.5fr;
+        gap: 9px;
       }
       .red {
         background-color: #e72f24;
+        width: 320px;
+        height: 414px;
       }
       .white {
         background-color: #f0f1ec;
       }
       .blue {
         background-color: #004592;
+        width: 50px;
+        height: 130px;
       }
       .yellow {
         background-color: #f9d01e;
+        width: 198px;
+        height: 20px;
       }
       .black {
         background-color: #232629;
+        width: 153px;
+        height: 20px;
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <div class="red"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="blue"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="yellow"></div>
-      <div class="black"></div>
+    <div class="border">
+      <div class="container">
+        <div class="red"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="blue"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
     </div>
   </body>
 </html>
